@@ -1,3 +1,57 @@
+/* Este archivo es compilado automáticamente desde el archivo SCSS */
+/* Estilos del carrito de compras */
+/* Estilos del carrito de compras */
+#cart-container {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+#cart-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
 
-/*# sourceMappingURL=styles.css.map */
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#checkout-btn:hover {
+    background-color: #ff4081;
+}
+
+/* Otros estilos generales (header, main, etc.) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
