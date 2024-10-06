@@ -3,61 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Sweety Repostería</title>
-
-    <!-- Vincula el archivo CSS -->
-    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <!-- Header con menú -->
+    <!-- Encabezado -->
     <header>
-        <div class="container">
-            <div id="logo">SWEETY REPOSTERÍA</div>
-            <span class="menu-toggle">☰</span>
-            <nav>
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre Nosotros</a></li>
-                    <li><a href="#products">Productos</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>SWEETY REPOSTERÍA</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Banner de fondo -->
-    <section id="banner"></section>
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <h2>MIS TORTAS SON HECHAS A MANO CON MUCHO AMOR.</h2>
+            <p>Descubre el sabor de la pastelería artesanal, donde cada bocado es una experiencia única.</p>
+            <button onclick="addToCart()">Hacer un pedido</button>
+        </section>
 
-    <!-- Carrito de compras -->
-    <div id="cart-container">
-        <h2>Carrito de Compras</h2>
-        <ul id="cart-items"></ul> <!-- Lista de productos en el carrito -->
-        <p>Total: $<span id="cart-total">0.00</span></p> <!-- Total de la compra -->
-        <button id="checkout-btn">Finalizar Compra</button> <!-- Botón para finalizar -->
-    </div>
-
-    <!-- Productos y Pedido -->
-    <main class="container">
-        <div class="grid">
-            <div class="text-box">
-                <h1>MIS TORTAS SON<br>HECHOS A MANO<br>CON MUCHO AMOR.</h1>
-                <p>Descubre el sabor de la pastelería artesanal, donde cada bocado es una experiencia única.</p>
-                <button class="cta-button" onclick="addToCart('Torta de Chocolate', 15.00)">Hacer un pedido</button>
-            </div>
-            <div class="image-box" style="background-image: url('REPOSTERIA/fondo4.jpg');"></div>
-            <div class="image-box" style="background-image: url('REPOSTERIA/pastel1.jpg');"></div>
-        </div>
+        <!-- Carrito de compras en barra lateral -->
+        <aside id="cart">
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items"></div>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button id="finalize-purchase">Finalizar Compra</button>
+        </aside>
     </main>
 
-    <!-- Footer -->
+    <!-- Sección de enlaces rápidos, contacto, y redes sociales restaurados -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Sweety Repostería. Todos los derechos reservados.</p>
-        </div>
+        <section>
+            <h3>Enlaces rápidos</h3>
+            <ul>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Contacto</h3>
+            <p>Email: contacto@sweetyreposteria.com</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Dirección: Calle Pastelería 123</p>
+        </section>
+
+        <section>
+            <h3>Horarios</h3>
+            <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+            <p>Sábado: 10:00 AM - 2:00 PM</p>
+        </section>
+
+        <section>
+            <h3>Síguenos en nuestras redes sociales</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </section>
     </footer>
 
-    <!-- Vincula el archivo JavaScript -->
-    <script src="js/cart.js"></script>
+    <!-- Script para manejar el carrito -->
+    <script src="./js/carrito.js"></script>
 </body>
 </html>
