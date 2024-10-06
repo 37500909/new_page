@@ -3,75 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
     <title>Sweety Repostería</title>
+
+    <!-- Vincula el archivo CSS generado desde Sass -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Encabezado -->
     <header>
-        <h1>SWEETY REPOSTERÍA</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div id="logo">SWEETY REPOSTERÍA</div>
+            <span class="menu-toggle">☰</span>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Contenido principal -->
-    <main>
-        <section>
-            <h2>MIS TORTAS SON HECHAS A MANO CON MUCHO AMOR.</h2>
-            <p>Descubre el sabor de la pastelería artesanal, donde cada bocado es una experiencia única.</p>
-            <button onclick="addToCart()">Hacer un pedido</button>
-        </section>
+    <section id="banner"></section>
 
-        <!-- Carrito de compras en barra lateral -->
-        <aside id="cart">
-            <h2>Carrito de Compras</h2>
-            <div id="cart-items"></div>
-            <p>Total: <span id="cart-total">$0.00</span></p>
-            <button id="finalize-purchase">Finalizar Compra</button>
-        </aside>
+    <main class="container">
+        <div class="grid">
+            <div class="text-box">
+                <h1>MIS TORTAS SON<br>HECHAS A MANO<br>CON MUCHO AMOR.</h1>
+                <p>Descubre el sabor de la pastelería artesanal, donde cada bocado es una experiencia única.</p>
+                <a href="#order" class="cta-button">Hacer un pedido</a>
+            </div>
+
+            <!-- Aquí se muestran las imágenes corregidas con las rutas relativas -->
+            <div class="image-box" style="background-image: url('images/pastel-1.jpg');" alt="Pastel 1"></div>
+            <div class="image-box" style="background-image: url('images/pastel-2.jpg');" alt="Pastel 2"></div>
+            <div class="image-box" style="background-image: url('images/pastelero.jpg');" alt="Pastelero trabajando"></div>
+        </div>
     </main>
 
-    <!-- Sección de enlaces rápidos, contacto, y redes sociales restaurados -->
     <footer>
-        <section>
-            <h3>Enlaces rápidos</h3>
-            <ul>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Contacto</h3>
-            <p>Email: contacto@sweetyreposteria.com</p>
-            <p>Teléfono: +123 456 7890</p>
-            <p>Dirección: Calle Pastelería 123</p>
-        </section>
-
-        <section>
-            <h3>Horarios</h3>
-            <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-            <p>Sábado: 10:00 AM - 2:00 PM</p>
-        </section>
-
-        <section>
-            <h3>Síguenos en nuestras redes sociales</h3>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-        </section>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Calle: San Miguel 855, San Miguel de Tucumán.</p>
+                    <p>Teléfono: ya lo vamos a poner</p>
+                    <p>Email: Sweety.reposteria@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#about">Sobre Nosotros</a></li>
+                        <li><a href="#products">Nuestros Productos</a></li>
+                        <li><a href="#order">Cómo Ordenar</a></li>
+                        <li><a href="#faq">Preguntas Frecuentes para ayudar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Horario</h3>
+                    <p>Lunes a Viernes: 9:00 am - 17:00 pm</p>
+                    <p>Sábados: 10am - 6pm</p>
+                    <p>Domingos: Cerrado - Entregas en el Taller</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos en Nuestras Redes Sociales</h3>
+                    <div class="social-icons">
+                        <!-- Asegúrate de que las imágenes de redes sociales estén en la carpeta correcta -->
+                        <a href="https://facebook.com/tu-emprendimiento" title="Facebook" target="_blank">
+                            <img src="images/facebook-logo-facebook.png" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://instagram.com/tu-emprendimiento" title="Instagram" target="_blank">
+                            <img src="images/instagram-png-logo-transparent.png" alt="Instagram" class="social-icon">
+                        </a>
+                        <a href="https://twitter.com/tu-emprendimiento" title="Twitter" target="_blank">
+                            <img src="images/twitter-icon.png" alt="Twitter" class="social-icon">
+                        </a>
+                        <a href="https://pinterest.com/tu-emprendimiento" title="Pinterest" target="_blank">
+                            <img src="images/pinterest-icon.png" alt="Pinterest" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweety Repostería. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
 
-    <!-- Script para manejar el carrito -->
-    <script src="./js/carrito.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
